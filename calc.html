@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <div class="container m-4 border-primary">
+        <div class="row justify-content-center">
+            <div class="col-md-4 p-4 bg-white  border shadow-sm rounded">
+                <form name="myform">
+                    <h4 class="text-center mb-3">Simple Calculator</h4>
+
+                    <div class="m-2">
+                        <label class="form-label">First Number</label>
+                        <input type="number" name="n1" class="form-control">
+                    </div>
+                    <div class="m-2">
+                        <label class="form-label">Second Number</label>
+                        <input type="number" name="n2"class="form-control">
+                        <div class="m-2">
+                            <div class=" mb-3">
+                                <button class="btn btn-primary" type="button" onclick="add()">+</button>
+                                <button class="btn btn-primary" type="button" onclick="sub()">-</button>
+                                <button class="btn btn-primary" type="button"onclick="mult()">*</button>
+                                <button class="btn btn-primary" type="button" onclick="div()">/</button>
+                                <input class="btn btn-primary"  type="reset" value="Reset">
+
+                            </div>
+
+                        </div>
+                        <div>
+                            <label class="form-label">Result</label>
+                            <input type="text" class="form-control"name="res" disabled>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        var a,b,Result;
+        function add(){
+            a=Number(document.myform.n1.value);
+            b=Number(document.myform.n2.value);
+            Result=a+b
+        document.myform.res.value=Result.toFixed(3);
+        }
+        function sub(){
+            a=Number(document.myform.n1.value);
+            b=Number(document.myform.n2.value);
+            Result=a-b
+             document.myform.res.value=Result.toFixed(3);
+        }
+         function mult(){
+            a=Number(document.myform.n1.value);
+            b=Number(document.myform.n2.value);
+            Result=a*b
+             document.myform.res.value=Result.toFixed(3);
+        }
+         function div(){
+            a=Number(document.myform.n1.value);
+            b=Number(document.myform.n2.value);
+            Result=a/b
+             document.myform.res.value=Result.toFixed(3);
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
