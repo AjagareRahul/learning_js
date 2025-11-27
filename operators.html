@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = 10
+        var b = 13
+        var c = a + b
+        c++;
+        c--;
+        c++;
+        document.write(c + "<br>")
+        var a = 20
+        var b = 2
+        var c = a % b
+        document.write(c + "<br>")
+        var c = a * b
+        document.write(c + "<br>")
+        var c = a % b
+        document.write(c + "<br>")
+
+
+    </script>
+    <script>
+        //  <!-- assignment operator -->
+        var a = 10
+        var b = 13
+        a += b
+        document.write(a + "addition <br>")
+        var a = 10
+        var b = 13
+        a -= b
+        document.write(a + "sub <br>")
+        var a = 10
+        var b = 13
+        a *= b
+        document.write(a + "multiplication <br>")
+
+        var a = 10
+        var b = 13
+        a %= b
+        document.write(a + " modules <br>")
+
+    </script>
+    <script>
+        //<!-- comparision operator -->
+        var a = 10
+        var b = "13"
+        var c = a + b
+          document.write(c + "<br>")
+           var a = 10
+        var b = "10"
+        if(a==b){
+            document.write("Ites True:",a+b)
+        }else{
+            document.write("Its False:",a-b)
+        }
+        document.write("<br>")
+        var a = 10
+        var b = "10"
+        if(a!=b){
+            document.write("Ites True:")
+        }else{
+            document.write("Its False:")
+        }
+         document.write("<br>")
+        var a = 10
+        var b = "12"
+        if(a>=b){
+            document.write("Ites True:")
+        }else{
+            document.write("Its False:")
+        }
+     </script>
+     <script>
+        document.write("<br>")
+        //logical operator && || !
+        document.write("lOGICAL AND:")
+        var age=18;
+        if(age>=18 && age<=100)
+        {
+            document.write("Eligible for voting:");
+        }else{
+            document.write("Not eligible for voting:");
+        }
+        document.write("<br>")
+        document.write("Logica OR:")
+        var day="Saturday";
+        if(day=="Saturday" || day=="Sunday")
+        {
+            document.write("Its weekend");
+        }else{
+            document.write("Its week days");
+        }
+          document.write("<br>")
+          document.write("Logical Not: ")
+        var day="Saturday";
+        if(day!="Saturday")
+        {
+            document.write("its weekdays");
+        }else{
+            document.write("Its weekend");
+        }
+     </script>
+     <script>
+          document.write("<br>")
+          document.write("TernaryOperator: ")
+          var age=18
+          var eligiblity=(age>=18)? "Eligible for voting":"Not eligible for voting"
+          document.writeln(eligiblity)
+     </script>
+
+</body>
+
+</html>
