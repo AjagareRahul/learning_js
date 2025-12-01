@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><h1>ARRAY</h1>
+    <script>
+        //Update and delete
+        var a=["Rajeev",21,"Rahul","Sanjeev"];
+        document.write(a+"<br>");
+        a[1]=22
+        a[2]="Sandeep"
+        document.write("a:"+a+"<br>");
+        delete a[2];
+         document.write("After Deletion:"+a+"<br>");
+    </script>
+    <script>
+        var a=["Sasuke","Madara","Itachi","Obito","Fugaku","Shisui"];
+        document.write(a+"<br>");
+        a.sort();
+         document.write("Sorted:"+a+"<br>");
+         a.reverse();
+          document.write("Reversed:"+a+"<br>");
+    </script>
+    <script>
+        var a=["Sasuke","Madara","Itachi","Obito","Fugaku","Shisui"];
+        document.write(a+"<br>");
+       a.pop();
+         document.write("Pop:"+a+"<br>");
+         a.push("Kakashi");
+          document.write("Push:"+a+"<br>");
+           a.shift();
+          document.write("Shift:"+a+"<br>");
+           a.unshift("Sasuke");
+          document.write("Unshift:"+a+"<br>");
+    </script>
+    <br>
+    <SCript>
+         var a=["Sasuke","Madara","Itachi","Obito","Fugaku","Shisui"];
+         var b=["Pain","Minato","Nagato","Naruto","Kushina","Hashirama"];
+         var e=["Sasuke","Suigetsu","Karin","Jogen"];
+         var c=a.concat(b);
+         document.write("Array Concatination:"+c+"<br>");
+         var d=a.join("/");
+           document.write("Array Concatination:"+d+"<br>");
+           f=a.concat(b,e);
+           document.writeln("Concatination Treece Array:"+f);
+
+    </SCript>
+    
+</body>
+</html>
