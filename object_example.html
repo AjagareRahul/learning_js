@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a ={
+            name:'Rahul',
+            lname:'Ajagare',
+            age:21,
+            email:'ajagarerahul@gmail.com',
+            players:['YouRaj','Virat','Dhoni','Jadega'],
+            address:{
+                'city':'Latur',
+                country:'india',
+
+            },
+            phone:9011646406,
+            msg:'Today im going to sydne'
+
+
+        }
+        document.writeln("This is my name "+a.name+'This is my last name '+a.lname+"<br>");
+     document.writeln("This is my age "+a.age+'This is my email '+a.email+"<br>");
+     document.writeln("This is my  "+a.address.city+"This is my Country "+a.address.country+"<br>");
+
+    </script>
+    <br>
+    <script>
+    var emp = {
+        name: 'Rahul',
+        id: 1001,
+        salary: 2.5,
+        skill: {
+            front_end: ['HTML', 'CSS', 'JS'],
+            back_end: ['python', 'sql']
+        }
+    };
+
+    document.writeln("This is my name: " + emp.name + "<br>");
+    document.writeln("This is my id: " + emp.id + "<br>");
+    document.writeln("This is my salary: " + emp.salary + "<br>");
+    document.writeln("Front-end Skill 1: " + emp.skill.front_end[0] + "<br>");
+</script>
+
+    
+</body>
+</html>
